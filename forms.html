@@ -50,8 +50,31 @@
         <input type="text" name="search_query">
         <button>Search youtube</button>
     </form>
-    
     <!-- 라벨이 input의 내용과 이어주는 역할을 한다. -->
 
+    <hr>
+    <h2>More Inputs!</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I agree to everything</label>
+        <p>
+            <label for="xs">XS:</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="m">M:</label>
+            <input type="radio" name="size" id="m" value="m">
+            <label for="s">S:</label>
+            <input type="radio" name="size" id="s"value="s">
+        </p>
+        <!-- 엔터를 쳤을때 브라우저에게 get으로 주는 내용은 value값이다 -->
+        <p>
+            <label for="meal">Please Select an Entree</label>
+            <select name="meal" id="meal">
+                <option value="fish">fish</option>
+                <option value="raman">raman</option>
+                <option value="Steak">Steak</option>
+            </select>
+        </p>
+        <button>submit</button>
+    </form>
 </body>
 </html>
