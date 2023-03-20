@@ -12,5 +12,46 @@
     <!-- 이메일 입력하기 -->
     <!-- 연령대별 드롭다운 -->
     <!-- 제출버튼 -->
+    <h1>Race Registration!</h1>
+    <form action="/hi">
+        <div>
+            <label for="First_Name">First Name</label>
+            <input type="text" id="First_Name" name="First_Name" required>
+            <label for="Last_Name">Last Name</label>
+            <input type="text" id="last_Name" name="Last_Name" required>
+        </div>
+        <div>
+            <p>
+                Select a Race:
+                <div>
+                    <input type="radio" name="root" id="5k" value="5k">
+                    <label for="5k">Fun Run 5k</label>
+                </div>
+                <div>
+                    <input type="radio" name="root" id="half" value="half">
+                    <label for="half">Half Marathon</label>
+                </div>
+                <div>
+                    <input type="radio" name="root" id="full" value="full">
+                    <label for="full">Full Marathon</label>
+                </div>
+            </p>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <div>
+            <label for="Group">Select Age Group</label>
+            <select name="Group" id="Group" required>
+                <option value="teen">~19</option>
+                <option value="adult">~60</option>
+                <option value="grand">~100</option>
+            </select>
+        </div>
+        <button>Registert</button>
+    </form>
 </body>
 </html>
