@@ -1,0 +1,31 @@
+/* *{
+    background-color: aqua;
+} */
+
+body{
+    background-color: #f1faee;
+}
+
+button{
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+
+h1,h2{
+    color: darkslateblue;
+}
+
+#sighup{
+    background-color: #1d3357;
+    color: aquamarine;
+}
+
+span{
+    color: #45789a;
+}
+
+.tag{
+    background-color: #e63946;
+    color: #123422;
+    
+}
