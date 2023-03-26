@@ -29,3 +29,16 @@ span{
     color: #123422;
     
 }
+
+/* li a 의 경우 li안에 있는 a앵커태그만 포함이다 즉 li는 안바뀜 */
+span a{
+    color: #45789d;
+}
+
+.post a{
+    color: #45789d;
+}
+
+footer a{
+    color: red;
+}
