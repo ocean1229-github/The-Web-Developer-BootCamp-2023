@@ -1,0 +1,16 @@
+body{
+    color: purple;
+}
+
+section{
+    color: aqua;
+}
+
+form{
+    color: greenyellow;
+}
+
+button, input{
+    color: inherit;
+}
+/* 테두리 요소의 경우 상속이 불가능하다. */
