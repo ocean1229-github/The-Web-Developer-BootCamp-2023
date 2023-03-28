@@ -101,3 +101,12 @@ p::first-line{
 p::selection{
     background-color: yellow;
 }
+
+/* 충동한 경우 */
+
+/* 브라우저가 계산한다 -> 더욱 구체적인 내용을 우선순위로 적용한다. */
+/* id > class등과 같은 요소 선택자들 > element */
+button:hover{
+    color: olive;
+    font-size: 10px;
+}
