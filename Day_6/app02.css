@@ -37,8 +37,55 @@ span a{
 
 .post a{
     color: #45789d;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 footer a{
     color: red;
+}
+
+input + button{
+    background-color: pink;
+}
+
+/* h2 다음으로 오는 버튼들이 전부 바뀐다 */
+h2 + button{
+    font-size: 20px;
+    background-color: magenta;
+}
+
+/* 속성 선택자 사용법 */
+input[type="password"]{
+    color: greenyellow;
+}
+
+section[class="post"]{
+    background-color: purple;
+}
+
+a[href*="google"]{
+    color: magenta;
+}
+
+button:hover{
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+.post button:hover{
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+.post a:hover{
+    text-decoration: underline;
+}
+
+.post button:active{
+    background-color: #02c39a;
+}
+
+.post:nth-of-type(3n){
+    background-color: #dfe8dc;
 }
