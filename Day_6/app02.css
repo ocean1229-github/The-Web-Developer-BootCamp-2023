@@ -110,3 +110,9 @@ button:hover{
     color: olive;
     font-size: 10px;
 }
+
+/* !important랑 인라인 css는 안사용하는게 좋다. */
+
+button{
+    background-color: magenta; !important;
+}
