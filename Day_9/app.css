@@ -7,3 +7,28 @@ h1{
     background-color: pink;
     width: 100px;
 }
+
+#one{
+    background-color: #E7D384;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    box-sizing: border-box;
+    /* border속성은 width와 color style을 다 넣지 않는 이상 보이지 않는다 */
+}
+#two{
+    background-color: #F58A51;
+    border-color: #ffcdb2;
+    border-width: 3px;
+    border-style: dashed;
+    border-left-width: 8px;
+    border-left-color: red;
+    box-sizing: border-box;
+}
+#three{
+    background-color: #E8E0D1;
+    border: 4px solid lime;
+    border-left-style: dotted;
+    box-sizing: border-box;
+    border-radius: 10%;
+}
