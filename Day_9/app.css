@@ -3,11 +3,19 @@ div{
     height: 200px;
     background-color: #F7A173;
 }
+
+span{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
 h1{
     background-color: pink;
     width: 100px;
     padding-left: 100px;
     padding-top: 50px;
+    margin: 0;
+   
 }
 
 #one{
@@ -17,6 +25,9 @@ h1{
     border-style: solid;
     box-sizing: border-box;
     /* border속성은 width와 color style을 다 넣지 않는 이상 보이지 않는다 */
+    margin-left: 50px;
+    margin-bottom: 100px;
+
 }
 #two{
     background-color: #F58A51;

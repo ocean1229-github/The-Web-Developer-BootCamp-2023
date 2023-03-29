@@ -1,0 +1,15 @@
+h1{
+    background-color: palegoldenrod;
+    border: 1px solid black;
+    display: inline;
+}
+
+span{
+    background-color: paleturquoise;
+    border: 1px solid black;
+    display: block;
+    padding: 50px;
+    margin: 50px;
+}
+
+/* 항상 강조하던건데 inline요소는 가로 세로 지정을 하지 못한다. */
