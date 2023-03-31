@@ -1,0 +1,40 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: #3d405b;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+
+#middle{
+    background-color: #8ab29a;
+}
+
+#static #middle{
+    position: static;
+    top: 100px;
+}
+
+#relative #middle{
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+/* 부모를 기준으로 (부모가 없으면) body를 기준으로 */
+#absolute{
+    position: relative;
+}
+
+#absolute #middle{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+#fixed #middle{
+    position: fixed;
+    top: 0px;
+    left: 400px;
+}
