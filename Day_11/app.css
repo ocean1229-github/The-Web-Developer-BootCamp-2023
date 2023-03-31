@@ -1,0 +1,22 @@
+section{
+    width: 500px;
+    height: 500px;
+    background-color: magenta;
+}
+
+/* 이 불투명도는 한요소(배경색)만 포함함. */
+#rgba{
+    width: 50%;
+    height: 50%;
+    background-color: #00ccaab9;
+    /* 불투명도도 위에처럼 적용시킬 수 있다. */
+}
+
+/* 이 불투명도는 요소까지 전부 포함해줌 */
+#opacity{
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    opacity: 0.3;
+}
+/* 버튼도 적용된다 */
