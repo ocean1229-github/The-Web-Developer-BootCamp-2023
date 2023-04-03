@@ -25,6 +25,9 @@ h1 {
     /* wrap 은 상하좌우로 요소들을 컨트롤 하는 코드이다. */
     /* align-items: baseline; */
     /* baseline 글꼴의 제일 아래점 맞춰서 시작함. */
+    /* align-content: space-between; */
+    /* 행과 열사이를 조절하는 기능 */
+    /* 줄 바꿈 없이 단일 행, 열일 경우 변하지 않는다. */
 }
 
 #container div{
@@ -33,3 +36,14 @@ h1 {
     text-align: center;
     /* font-size: 4em; */
 }
+
+/* div:nth-of-type(3){
+    align-self: center;
+}
+div:nth-of-type(2){
+    align-self: center;
+} */
+div:nth-of-type(5){
+    align-self: flex-start;
+} 
+/* 이런식으로 align-self사용가능 */
