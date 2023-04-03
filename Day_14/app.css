@@ -33,8 +33,14 @@ h1 {
 #container div{
     height: 200px;
     width: 200px;
+    /* 너무 커지거나 작아지는 것을 방지하기 위함 */
+    max-width: 300px;
     text-align: center;
     /* font-size: 4em; */
+    flex-basis: 200px;
+    /* 안에 있는 요소들이 200px이 아닌 400px로 가로가 늘어난다. -> 기존 너비 무시 (요소가 한 줄로 늘어서 있을 때) */
+
+
 }
 
 /* div:nth-of-type(3){
@@ -43,7 +49,15 @@ h1 {
 div:nth-of-type(2){
     align-self: center;
 } */
-div:nth-of-type(5){
+/* div:nth-of-type(5){
     align-self: flex-start;
-} 
+}  */
 /* 이런식으로 align-self사용가능 */
+
+ div:nth-of-type(1){
+    flex-grow: 1;
+    /* 1번째 요소옆에 있는 빈칸을 다 차지한다. */
+    /* flex-grow로 남는 공간의 비율 설정을 요소별로 할 수 있다. */
+    flex-shrink: 3;
+    /* 숫자를 늘릴 수록 다른 요소에 비해 얼마나 줄어들지를 정한다. */
+}
