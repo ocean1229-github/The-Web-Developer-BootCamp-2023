@@ -1,0 +1,52 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+}
+nav {
+    font-size: 1.5em;
+}
+
+ul,li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* @media (min-width: 600px) and (max-width: 800px){
+    h1{
+        color: purple;
+    }
+} */
+
+h1{
+    color: red;
+}
+
+@media(max-width: 500px){
+    h1{
+        color: orange;
+    }
+}
+@media(max-width: 1000px){
+    h1{
+        color: yellow;
+    }
+}
+@media(max-width: 1500px){
+    h1{
+        color: green;
+    }
+}
+
+/* 가로로 했을 때 나타나게 하기 -> orientation: landscape */
+@media(orientation: landscape){
+    body{
+        background-color: magenta;
+    }
+}
