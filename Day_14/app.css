@@ -61,3 +61,24 @@ div:nth-of-type(2){
     flex-shrink: 3;
     /* 숫자를 늘릴 수록 다른 요소에 비해 얼마나 줄어들지를 정한다. */
 }
+
+/* flex는 flex-grow, flex-shrink, flex-basis를 합친 것 */
+
+main{
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+}
+
+main .sidebar{
+    background-color: #6930c3;
+    flex: 1 2 300px;
+}
+
+main .maincontent{
+    background-color: #80ffdb;
+    flex: 2 1 800px;
+    /* grow, shrink, basis -> basis는 단위가 있지만 나머지 두개는 단위가 없다. */
+}
