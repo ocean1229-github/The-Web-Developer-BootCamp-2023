@@ -1,0 +1,22 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    /* 컨테이너 안에 있는 요소에 display:flex를 주었더니 그 컨테이너 안에 요쇼가 다 들어가도록 설정이 됨. 왼쪽 -> 오른쪽*/
+    display: flex;
+    flex-direction: column;
+    /* row, row-reverse, column, column-reverse */
+}
+
+#container div{
+    height: 200px;
+    width: 200px;
+}
