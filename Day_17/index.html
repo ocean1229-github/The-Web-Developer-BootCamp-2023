@@ -13,7 +13,7 @@
 
             <h1 class="display-1 text-center text-primary">Bootstrap Playground 
             </h1>
-            <h2 class="display-4">Buttons</h2>
+            <h2 class="display-4">Buttons <span class="badge badge-success badge-pill">New</span></h2>
             <button type="button" class="btn btn-success">Success</button>
             <button type="button" class="btn btn-info">Info</button>
             <button type="button" class="btn btn-outline-warning">Warning Outline</button>
@@ -21,6 +21,23 @@
             <button type="button" class="btn btn-outline-info btn-lg">Lg Warning</button>
             <button type="button" class="btn btn-secondary btn-sm">Sm Secondary</button>
             <button type="button" class="btn btn-success" disabled>Success Disabled</button>
+            <button class="btn btn-primary">Updates <span class="badge badge-light">9</span></button>
+            <h3>Button Groups</h3>
+            <div class="btn-group">
+                <button class="btn btn-warning">One</button>
+                <button class="btn btn-warning">Two</button>
+                <button class="btn btn-warning">Three</button>
+            </div>
+            <h3>Alerst</h3>
+            <!-- 밑에 있는 alert의 경우 오른쪽 상단에 x버튼이 만들어지며 x 버튼을 누를 경우 천천히 사라짐. -->
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">Oh No!</h4>
+                Danger! You are about to end the world as we know it!
+                <button aria-label="Close" class="close" data-dismiss="alert">
+                    <!-- aria-hidden 은 항상 등장할 필요가 없다는 뜻이다. -->
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
             <h2 class="display-4">Typograpy</h2>
             <p class="lead">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi enim harum quae culpa placeat, ipsam architecto officia ad nulla est provident dolorem dolore voluptatem consectetur quibusdam, quidem dolores quasi iure?
