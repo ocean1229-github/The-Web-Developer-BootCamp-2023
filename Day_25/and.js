@@ -13,3 +13,4 @@ if(password.length >= 6 && password.indexOf(' ' === -1)){
 }else{
     console.log("INCORRECT FORMAT FOR PASSWORD!")
 }
+
