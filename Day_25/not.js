@@ -14,3 +14,4 @@ if(!firstName){
 const age = 8;
 if(!( age>=0 && age<5 || age >= 65)){
     console.log("YOUR NOT A BABY OR A SENIOR");
+}
