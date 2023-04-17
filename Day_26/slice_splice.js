@@ -33,3 +33,7 @@ colors.splice(1, 0, 'red-orange');
 colors.splice(3, 0, 'yellow-green', 'forestgreen');
 
 colors.splice(2, 2, 'DELETED!!');
+
+let scores = [1, 70, 100, 50, 30, 25900, 9, -21, 0, 34];
+scores.sort();
+//첫번째 자리 숫자만 계산하기때문에 정렬에 사실 별로다.
