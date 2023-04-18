@@ -44,3 +44,11 @@ person["firstName"];
 //꼭 따옴표 넣기
 
 person['first' + 'Name'];
+
+const midterms = {daniel: 96, thomas: 73};
+midterms.thomas = 79;
+//이렇게하면 수정가능.
+midterms.thomas = 'C+';
+midterms["daniel"] = 'A';
+midterms.ezra = 'B+';
+midterms['antonio'] = 'A-'
