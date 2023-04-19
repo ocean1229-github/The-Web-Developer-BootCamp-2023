@@ -26,8 +26,14 @@
 //     console.log(hum);
 // }
 
-for(let num = 1; num<= 1000; num*=10){
-    console.log(num);
-    //10 100 1000
-}
+// for(let num = 1; num<= 1000; num*=10){
+//     console.log(num);
+//     //10 100 1000
+// }
 
+// ------------------Infinite Loops-------------------------
+// for(let i = 20; i >= 0 ; i++){
+//     console.log(i);
+// }//Bad loops
+//컴퓨터의 메모리를 다 차지해버린다고
+//무한루프가 굉장한 골칫거리라고 한다.
