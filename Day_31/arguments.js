@@ -8,6 +8,7 @@ function greet(firstName, lastName){
 }
 
 function repeat(str, num){
+    //인수의 개수에 맞게 함수를 안쓰면 아예 안됨 undefined를 못읽기 때문.
     let result = '';
     for(let i = 0; i < str; i++){
         result += str;
