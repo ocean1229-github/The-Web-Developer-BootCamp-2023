@@ -44,3 +44,5 @@ movies.forEach(function(movie){
     //모든 객체가나온다
     console.log('${movie.title} - ${movie.score}/100')
 })
+
+
