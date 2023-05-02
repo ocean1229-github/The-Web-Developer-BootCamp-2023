@@ -30,3 +30,23 @@ movies.map(function (movie){
 })
 
 // movie 타이틀이 대문자로 변경되서 새로운 배열에 저장.
+
+//------------------------------------map[ing
+
+// mapping
+const newMovies = movies.map(function(movie){
+    return '${movie.title} - ${movie.score / 10}'
+})
+
+// arrow
+const newMoviesMap = movies.map((movie)=>{
+    return '${movie.title} - ${movie.score / 10}'
+})
+
+// 암시적반환
+const newMoviesMap2 = movies.map(movie=>(
+    '${movie.title} - ${movie.score / 10}'
+))
+
+// 코드 한줄로 쓰기
+const newMoviesMap3 = movies.map( movie => '${movie.title} - ${movie.score / 10}')
