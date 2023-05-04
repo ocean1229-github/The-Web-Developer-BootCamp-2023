@@ -15,3 +15,11 @@ console.log('hello')
 console.log(...'hello')
 //h e l l o
 //이런식으로 전개가된다.
+
+const cats = ['Blue', 'Scout', 'Rocket'];
+const dogs = ['Rusty', 'Wyatt'];
+
+const allPets = [...cats, ...dogs]
+//배열두개가 합쳐진다
+//+ const allPets = [...cats, ...dogs, ~~~]
+//해도 배열이 잘만들어진다.
