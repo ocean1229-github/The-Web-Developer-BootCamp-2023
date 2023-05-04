@@ -23,3 +23,18 @@ const allPets = [...cats, ...dogs]
 //배열두개가 합쳐진다
 //+ const allPets = [...cats, ...dogs, ~~~]
 //해도 배열이 잘만들어진다.
+
+const feline = { legs: 4, family: 'Felidae'};
+const canine = { isFurry: true, family: 'Caninae'}
+
+const catDog = {...feline, ...canine}
+const dogCat = {...canine, ...feline}
+// 둘다 다름
+
+const dataFromForm = {
+    email: 'blueman@gmail.com',
+    password: 'tobias123!',
+    username: 'tfunke'
+}
+
+const newUser = {...dataFromForm, id:2345, isAdmin: false}
