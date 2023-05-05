@@ -26,3 +26,30 @@ const squareImages = document.getElementsByTagName('square');
 //     img.src = '사진 중 한개의 출처를 넣음'
 // }
 
+//-------------------------------------
+
+document.querySelecter('p')
+document.getElementsByTagName('p')
+// 위 두개가 동일하다
+document.querySelecter('#banner')
+document.querySelecter('.square')
+
+document.querySelecter('a[title="Java"]')
+//이러면 a태그의 title = java를 찾아준다.
+
+document.querySelecterAll('p')
+//p문단 모두를 찾아준다.
+document.querySelecter('p')
+//첫번째 일치내용만 나온다.
+
+document.querySelecterAll('img')
+document.querySelecterAll('a')
+//24
+document.querySelecterAll('p a')
+//17
+const links = document.querySelecterAll('p a');
+
+for(let link of links){
+    console.log(link.href)
+}
+//모든 앵커태그 출처가 나온다.
