@@ -53,3 +53,35 @@ for(let link of links){
     console.log(link.href)
 }
 //모든 앵커태그 출처가 나온다.
+
+document.queryselector('h1')
+//<h1>Silkie Chickens</h1>
+
+const h1 = document.querySelecter('h1')
+console.dir(h1)
+
+document.querySelecter('p').innerText
+document.querySelecter('p').textContent
+//마크업에서 온 것이다.
+//textContent는 요소안에 있는 모든 콘텐츠를 보여준다
+//innerText의 경우는 모두를 보여주지는 않는다. 
+//예시로 display:none; 하면 inner에는 안보이지만 textContent에는 보인다.
+
+const allLinks = document.querySelecterAll('a');
+
+for(let link of allLinks){
+    link.innerText = 'I am a Link'
+}
+
+
+document.querySelecter('p').innerHTML
+//안에있는 태그까지 모두 나온다.
+
+document.querySelecter('h1').innerHTML = '<i>askdjas</i>'
+//html이 바껴서 적용된다.
+document.querySelecter('h1').innerHTML
+//"<i>askdjas</i>"
+document.querySelecter('h1').innerHTML += '<sup>asjdsa</sup>'
+//원래있던 h1에다가 글올림 하고 저 내용 추가하는 거임
+
+//+=을하지않고 =을해버리면 그냥 원래있던 내용이 다삭제됨.
