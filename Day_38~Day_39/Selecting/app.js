@@ -85,3 +85,37 @@ document.querySelector('h1').innerHTML += '<sup>asjdsa</sup>'
 //원래있던 h1에다가 글올림 하고 저 내용 추가하는 거임
 
 //+=을하지않고 =을해버리면 그냥 원래있던 내용이 다삭제됨.
+
+
+document.querySelecter('#banner').src
+// banner.src 가 나옴
+
+document.querySelecter('a').href
+//"file://wiki~~~"
+
+document.querySelecter('a').title
+//"List of chicken breeds"
+
+const firstLink = document.querySelecter('a')
+firstLink.href
+firstLink.getAttribute('id')
+firstLink.getAttribute('class')
+firstLink.getAttribute('title')
+
+firstLink.setAttribute('href', 'http://www.google.com')
+//구글로 href 변경.
+
+document.querySelecterAll('input')[1]
+//별로인 방법
+document.querySelecter('input[type="text"]')
+//이 방법이 좋음
+
+input.type
+//text
+input.type = 'password'
+//"password"
+
+input.type = 'color'
+//"color"
+
+input.setAttribute('type', 'text')
