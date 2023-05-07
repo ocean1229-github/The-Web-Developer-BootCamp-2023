@@ -3,6 +3,10 @@ body {
     margin: 0 auto;
 }
 
+h1{
+    color: olive;
+}
+
 #banner {
     width: 100%;
 }

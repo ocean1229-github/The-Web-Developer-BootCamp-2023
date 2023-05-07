@@ -119,3 +119,36 @@ input.type = 'color'
 //"color"
 
 input.setAttribute('type', 'text')
+
+
+const h1 = document.querySelecter('h1')
+h1.style.color
+//""
+//설정을 했는데도 불구하고 아무런 결과가 뜨지않는다.
+
+//이후 html에 인라인형식으로 컬러 설정후 다시
+const h1 = document.querySelecter('h1')
+h1.style.color
+//하면 제대로 색깔이 표시된다.
+h1.style.color = 'green'
+//"green"
+h1.style.fontSize = '3em'
+
+h1.style.border = '2px solid pink'
+//위에 특성들이 잘 적용된다.
+//그리 효과적이지 않다.
+
+for(let link of allLinks){
+    link.style.color = '#006c28'
+    link.style.textDecorationColor = 'magenta'
+    link.style.textDecorationStyle = 'wavy'
+}
+const h1 = document.querySelecter('h1')
+window.getComputedStyle(h1)
+//h1에 대한 계산된 스타일로 구성된 엄청 긴 cssStlyeDeclaration가 나온다.
+window.getComputedStyle(h1.color)
+//내가 설정한 컬러 색이 나온다.
+window.getComputedStyle(h1).marginLeft
+//"0px"
+window.getComputedStyle(h1).margin
+//21.44px 0px; = 디폴트값
