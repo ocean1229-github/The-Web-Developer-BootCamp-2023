@@ -152,3 +152,24 @@ window.getComputedStyle(h1).marginLeft
 //"0px"
 window.getComputedStyle(h1).margin
 //21.44px 0px; = 디폴트값
+
+const h2 = document.querySelecter('h2')
+h2.getAttribute('class')
+h2.setAttribute('class', 'purple')
+h2.setAttribute('class', 'border')
+//이렇게하면 이전의 purple 설정이 사라진다.
+
+let currentClasses = h2.getAttribute('class')
+h2.setAttribute('class', '${currentClasses} purple')
+
+const h2 = document.querySelecter('h2')
+h2.classList
+h2.classList.add('purple')
+h2.classList.add('border')
+//이러면 두개가 잘 추가된다ㅣ. 훨 간단함.
+h2.classList.remove('border')
+h2.classList.toggle('purple')
+// on/off 기능마냥 추가가 가능
+
+//이 기능은 그냥 한 번에 많은 기능들에다가 이걸 넣어야할때
+//css에서 클래스를 만든 뒤 js로 추가하는 방법으로 할때 사용한다.
