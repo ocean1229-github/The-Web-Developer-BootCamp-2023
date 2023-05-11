@@ -190,3 +190,31 @@ squareImg.previousSibling
 // squareImg 이전에 잇던 요소 ( 노드 사용 )
 squareImg.nextElementSlibing
 // squareImg 이후에 있는 요소 ( 노드 사용 )
+
+const newImg = "사진 출처"
+document.body.appendChild(newImg)
+//이러면 홈페이지 마지막에 newImg가 추가
+
+newImg.classList.add('square')
+const newH3 = document.creatElement
+
+const newH3 = document.createElement('h3')
+newH3
+newH3.innerText = 'I am new!'
+document.body.appendChild(newH3)
+//i am new! 생성
+//explorer 지원 x
+
+//append를 사용하면 쉽게 텍스트 추가가능 but 노드로는 불가능
+const newB = document.createElement('b')
+newB.append('Hi!')
+
+const h1 = document.querySelector('h1')
+
+h1.insertAdjacentElement('afterend', h2)
+// insertAdjacentElement 이건 js로 내가 아무곳이나 새로운 요소를 추가할때 사용한다.
+//after은 다음에 삽입한다.
+
+h3.innerText = 'I am h3';
+//I am h3
+h1.after(h3)
