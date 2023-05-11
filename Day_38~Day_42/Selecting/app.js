@@ -173,3 +173,20 @@ h2.classList.toggle('purple')
 
 //이 기능은 그냥 한 번에 많은 기능들에다가 이걸 넣어야할때
 //css에서 클래스를 만든 뒤 js로 추가하는 방법으로 할때 사용한다.
+
+const firstBold = document.querySelector('b')
+firstBold.parentElement.parentElement
+//부모요소로 상회 가능.
+
+const paragraph = firstBold.parentElement
+paragraph.children[0]
+
+const squareImg = document.querySelector('.square')
+squareImg
+squareImg.nextSibling
+//#text -> 노드가 텍스트를 나타낸다.
+
+squareImg.previousSibling
+// squareImg 이전에 잇던 요소 ( 노드 사용 )
+squareImg.nextElementSlibing
+// squareImg 이후에 있는 요소 ( 노드 사용 )
