@@ -218,3 +218,12 @@ h1.insertAdjacentElement('afterend', h2)
 h3.innerText = 'I am h3';
 //I am h3
 h1.after(h3)
+
+//removeChild는 부모 요소를 선택해야함
+
+const firstLi = document.querySelector('li')
+
+const ul = firstLi.parentElement
+
+ul.removeChild(firstLi)
+
