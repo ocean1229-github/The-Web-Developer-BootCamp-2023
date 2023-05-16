@@ -16,6 +16,7 @@ btn.onmouseenter = scream;
 document.querySelector('h1').onclick = () => {
     alert('you clicked the h1')
 }
+// function 사용할 시 위 처럼 arrow 특성 사용하면 됨.
 
 const btn3 = document.querySelector('#v3');
 btn3.addEventListener('dblclick', function(){
