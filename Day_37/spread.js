@@ -15,6 +15,7 @@ console.log('hello')
 console.log(...'hello')
 //h e l l o
 //이런식으로 전개가된다.
+//배열 및 글자 등 여러 곳에 유용하게 사용가능.
 
 const cats = ['Blue', 'Scout', 'Rocket'];
 const dogs = ['Rusty', 'Wyatt'];
