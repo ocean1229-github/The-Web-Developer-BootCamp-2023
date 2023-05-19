@@ -22,6 +22,6 @@ const addTweet = (username, tweet) => {
     const bTag = document.createElement('b');
     bTag.append(username)
     newTweet.append(bTag);
-    newTweet.append('- ${tweet}')
+    newTweet.append('-  ${tweet}')
     tweetsContainer.append(newTweet)
 }
