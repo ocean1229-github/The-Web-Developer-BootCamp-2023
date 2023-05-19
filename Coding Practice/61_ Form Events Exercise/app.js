@@ -9,14 +9,13 @@ form.addEventListener('submit', function(e){
     const productInput = form.elements.product;
     const qtyInput = form.elements.qty;
     
-    addtext(productInput, qtyInput)
+    addtext(productInput.value, qtyInput.value)
     productInput.value = '';
     qtyInput.value = '';
 })
 
 const addtext = (product, qty) =>{
     const newList = document.createElement('li');
-    newList.append('${product}')
-    newList.append('${qty}')
-    form.append(newList)
+    newList.append('${qty} ${product}')
+    GroceryList.append(newList)
 }
