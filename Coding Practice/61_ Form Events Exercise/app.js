@@ -16,6 +16,8 @@ form.addEventListener('submit', function(e){
 
 const addtext = (product, qty) =>{
     const newList = document.createElement('li');
-    newList.append('${qty} ${product}')
-    GroceryList.append(newList)
+    // 수정 -> newList.append(`${qty}` `${product}`)
+    newList.innerText = (`${qty} ${product}`)
+    // 수정 -> GroceryList.append(newList)
+    GroceryList.appendChild(newList)
 }
