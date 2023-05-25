@@ -17,9 +17,9 @@ let winningScore = 3;
 let isGameOver = false;
 
 function updateScores(player, opponet){
-    if(!isgameOver){
-        player += 1;
-        if(p1Score === winningScore){
+    if(!isGameOver){
+        player.score += 1;
+        if(player.score === winningScore){
             isGameOver = true;
             player.display.classList.add('has-text-success');
             opponet.display.classList.add('has-text-danger');
@@ -44,7 +44,7 @@ winningScoreSelect.addEventListener('change', function(){
 resetButton.addEventListener('click', reset)
 
 function reset(){
-    isgameOver = false;
+    isGameOver = false;
     for(let p of [p1, p2]){
         p.score = 0;
         p.display.textContent = 0;
