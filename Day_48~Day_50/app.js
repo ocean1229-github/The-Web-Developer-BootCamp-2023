@@ -19,6 +19,11 @@ let isGameOver = false;
 function updateScores(player, opponet){
     if(!isGameOver){
         player.score += 1;
+
+        if(player.score + 1 === winningScore && opponet.score === player.score){
+            winningScore = winningScore + 1;
+        }
+
         if(player.score === winningScore){
             isGameOver = true;
             player.display.classList.add('has-text-success');
