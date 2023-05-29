@@ -33,6 +33,8 @@
         });
     });
 
+    // 콜백 지옥은 explorer에서는 지원이 되지 않는다.
+
 
 // setTimeout(() => {
 //     document.body.style.backgroundColor = 'orange';
