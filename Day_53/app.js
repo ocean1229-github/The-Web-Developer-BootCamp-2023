@@ -56,3 +56,20 @@ searchMoviesAPI('amadeus', () => {
 }, ()=>{
     // 만약 api가 멈추거나 요청이 실패했을 경우
 })
+
+//url 전달 방식으로 콜백 지옥을 구현할 수 있다. (fakeRequestPromise)
+// const request = fakeRequestPromise('url')
+// fakeRequestPromise('yelp.com/api/coffee/page1')
+    // .then(() =>{
+    // console.log("its works!");
+    // fakeRequestPromise('yelp.com/api/coffee/page2')
+    // .then(() => {
+    //     console.log("it works 22!");
+    // }).cathc(() => {
+    //     console.log("err222!!"); 
+//   }).catch(() =? {
+//     console.log("err!");
+// })
+
+//어디에 오류가 생겼는지 알 수 있다.
+//코드 수정 필요. -> 이후 강좌보면서 제대로 수정하겠음.
