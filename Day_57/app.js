@@ -3,6 +3,7 @@ const data = {
 }
 
 //JSON 파싱 이란 json언어로 바꾸는것
+//JSON 파싱을 진행하면서 원하는 데이터 출력 가능.
 
 JSON.parse(data)
 
