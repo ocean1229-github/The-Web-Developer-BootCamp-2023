@@ -1,0 +1,11 @@
+URL
+
+Breeds
+Get : /breeds
+-> 이건 Get 요청만 가능한 URL 입니다
+
+동사마다 다 역할이 다르다.
+POST
+GetPUT
+PATCH 등등등
+
