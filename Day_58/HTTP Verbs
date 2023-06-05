@@ -24,3 +24,25 @@ MDN 참고하기.
 300번대는 리디렉션과 관계가 있다.
 GOOGLE.CO -> 리디렉션됨. -> 구글 접속됨.
 -> 301 코드가 뜬다.
+
+
+// Query String 이해하기
+/people/5
+//이렇게하면 단 한명의 인물정보만 뜬다
+
+/people/<id>
+
+https:// ~~~~?sort=desc&color=blue
+-> key - value 값 쌍으로 뭉침
+ex)
+GET https://swapi.dev/api/people/5?color=green&age=23&silly=yes
+쿼리문자열에는 마음대로 원하는 것을 넣을 수 있다.
+
+/schedule?
+스케줄로 시작하는 경우 여러 정보를 적어야할 수도 있다.
+ex)
+https://api.tvmaze.com/schedule?country=US&date=2022-12-01
+&로 구분하고 key=value로 쌍을 이룬다.
+
+//postman같은 도구들은 url에 직접 쿼리 문자열을 작성하지 않아도 쉽게 추가할 수 있다.
+Parameters 섹션에서 쿼리 매개변수로 country와 us를 넣으면 된다.
