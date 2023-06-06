@@ -36,6 +36,7 @@
 //     })
 
 const loadStarWarsPeople = async() => {
+    //try - catch문이 없을 경우 fetch api에 오류가 있을 때 아예 실행 오류가 남. 그래서 try - catch로 잡아줘야함.
     try{
 
         const res = await fetch("https://swapi.dev/api/people/1/")
@@ -45,6 +46,7 @@ const loadStarWarsPeople = async() => {
         const res2 = await fetch("https://swapi.dev/api/people/2/")
         const data2 = await res.json()
         console.log(data2);
+
     } catch (e) {
         console.log("ERROR!!!", e);
     }
