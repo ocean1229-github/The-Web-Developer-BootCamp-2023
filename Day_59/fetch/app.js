@@ -16,21 +16,38 @@
 //     })
 // 위의 코드의 경우 중복 걱정안해도됨.
 
-fetch("https://swapi.dev/api/people/1/")
-    .then((res) => {
-        console.log("RESOLVED", res)
-        return res.json()
-    })
-    .then((data) => {
+// fetch("https://swapi.dev/api/people/1/")
+//     .then((res) => {
+//         console.log("RESOLVED", res)
+//         return res.json()
+//     })
+//     .then((data) => {
+//         console.log(data);
+//         return fetch("https://swapi.dev/api/people/2/");
+//     })
+//     .then((data) => {
+//         console.log("Second Request RESOLVED~!");
+//         return res.json()
+//     }).then((data) => {
+//         console.log(data);
+//     })
+//     .catch((e) => {
+//         console.log("ERROR!!!", e)
+//     })
+
+const loadStarWarsPeople = async() => {
+    try{
+
+        const res = await fetch("https://swapi.dev/api/people/1/")
+        const data = await res.json()
         console.log(data);
-        return fetch("https://swapi.dev/api/people/2/");
-    })
-    .then((data) => {
-        console.log("Second Request RESOLVED~!");
-        return res.json()
-    }).then((data) => {
-        console.log(data);
-    })
-    .catch((e) => {
-        console.log("ERROR!!!", e)
-    })
+        
+        const res2 = await fetch("https://swapi.dev/api/people/2/")
+        const data2 = await res.json()
+        console.log(data2);
+    } catch (e) {
+        console.log("ERROR!!!", e);
+    }
+};
+
+loadStarWarsPeople();
