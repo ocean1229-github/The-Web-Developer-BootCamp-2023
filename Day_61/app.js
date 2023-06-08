@@ -29,7 +29,7 @@
 // const getDadJokes = async () => {
 //     try {
 //         const headers = { headers: { Accept: 'application/json' } }
-//         const response = await axios.get('https://icanhazdadjoke.com/', headers)
+        // const response = await axios.get('https://icanhazdadjoke.com/', headers)
 //         // console.log("Dad Joke: ", response.data.joke)
 //         const newLI = document.createElement('LI')
 //         let joke = response.data.joke;
