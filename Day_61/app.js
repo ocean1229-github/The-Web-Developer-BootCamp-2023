@@ -13,6 +13,7 @@
 //         const res = await axios.get('https://icanharzdadjoke.com/', config)
 //         return res.data.joke;
 //     }catch(e) {
+    //catch(e)나 catch나 상관없는거 아닌가?
 //         return "NO JOKES AVAILABLE! SORRY!";
 //     }
 // }
