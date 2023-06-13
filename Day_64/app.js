@@ -11,7 +11,7 @@ function rgb(r, g, b){
 // "rgb(255,100,25)"
 
 // 팩토리함수
-function makeColor(r,g,b){
+function makeColor(r, g, b){
     const color = {};
     color.r = r;
     color.g = g;
@@ -22,8 +22,10 @@ function makeColor(r,g,b){
     };
     color.hex = function() {
         const { r, g, b } = this;
-        return '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
-    }
+        return (
+            '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+        );
+    };
     return color;
 }
 
