@@ -3,3 +3,20 @@ https://www.tinkercad.com/things/4fI2BlBy4XZ-grand-borwo/edit
 https://web.autocad.com/acad/me/drawings/new/editor
 
 //cad 무료 작업
+
+trim
+원하는부분 이외 자르기
+(튀어 나오는 선같은 경우 trim을 통해 삭제가능)
+
+Extend
+원하는 곳까지 선을 연장
+원하는 도형으로 맞추다가 이 선을 이어서 마무리 해야하는데 부족하다
+그러면 Extend를 사용해서 늘릴 수 있음
+
+Offset
+일정하게 간격 띄우기
+
+Stretch
+원하는 범위를 선택해 늘리기 
+도형을 하나하나 길이를 늘릴려고 하다보면
+완전 싹 도안을 갈아 엎어야할 때가 있는데 도안을 갈아 엎는 것이 아닌 전체 드래그 후 Stretch를 해버리면 그 상태를 유지하면서 길이가 길어짐.
